@@ -1,0 +1,7 @@
+# Editor Files
+*.esproj
+
+# OS Files
+.DS_Store
+.Trashes
+Thumbs.db

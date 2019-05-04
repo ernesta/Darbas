@@ -1,0 +1,104 @@
+/* Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, hgroup, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}
+
+:focus, :active {
+	outline: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+header, nav, article, aside, footer, hgroup, section {
+	display: block;
+}
+
+
+/* Fixes */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+* html .clearfix {
+	zoom: 1
+}
+
+*:first-child+html .clearfix {
+	zoom: 1
+}
+
+body:before {
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;
+}
+
+
+/* Layout */
+html {
+	color: #EEE;
+	text-align: center;
+	background: url('bcg.png') repeat;
+}
+
+body {
+	padding-top: 10%;
+}
+
+#ticker {
+	display: inline-block;
+}
+
+#count {
+	color: #FFF;
+	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+	font-size: 96px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #ccc,
+		0 2px 0 #c9c9c9,
+		0 3px 0 #bbb,
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15);
+}
+
+#caption {
+	margin-top: 10px;
+	font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+	font-size: 24px;
+	font-style: italic;
+}
+
+.positive {
+	color: #82CAFA;
+	border-bottom: 1px dotted #82CAFA;
+}
+
+.negative {
+	color: #F665AB;
+	border-bottom: 1px dotted #F665AB;
+}
+
+#chart {
+	height: 200px;
+	margin-top: 20px;
+}
